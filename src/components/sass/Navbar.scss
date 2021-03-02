@@ -1,0 +1,39 @@
+.line{
+  background-color: #FF5400;
+  width:100%;
+  height:0.5rem;
+}
+.navbar{
+  display:flex;
+  margin-top:1rem;
+  margin-left:1rem;
+
+  &__profileImg{
+    .profileImg{
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+  }
+  &__ul{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(5,1fr);
+    width: 50vw;
+    grid-gap: 1rem;
+    &__listItem{
+      list-style:none;
+      white-space: nowrap;
+      .link{
+        text-decoration: none;
+        color:white;
+        text-transform: uppercase;
+        &:hover{
+          text-decoration: line-through;
+          color: #FF5400;
+        }
+      }
+    }
+  }
+
+}
